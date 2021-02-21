@@ -1,25 +1,15 @@
-import moment from "moment";
-import { useState } from "react";
+
 import "./App.css";
+import Head from "./Head/Head";
 
 function App() {
-  const date = moment().format('MM/DD/YYYY hh:mm:ss');
-  const [now, setNow] = useState(date);
-
-  setTimeout( ()=> {
-    const date = moment().format('MM/DD/YYYY hh:mm:ss');
-    setNow(date);
-  }, 1000)
-
+  
   return (
     <div className="App">
+      <Head />
       <header className="App-header">
         <p>Welcome To Telestrations</p>
-        <p>
-          <div>by Nishloka and Aayush</div>
-          <div>{now}</div>
-          </p>
-
+        <p>by Nishloka and Aayush</p>
       </header>
     </div>
   );
