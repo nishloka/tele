@@ -15,7 +15,7 @@ const Head = (props) => {
   <HeadWrapper>
     <img src="logo.jpg" alt="Logo" />
     <Greeting>
-      <Label>telestrations</Label>
+      <Label>Telestrations</Label>
       <Time>{now}</Time>
     </Greeting>
   </HeadWrapper>

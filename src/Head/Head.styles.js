@@ -19,6 +19,7 @@
     font-size: 2rem;
     text-align: right;
     padding-bottom: 10px;
+    font-family: Medieval;
 `;
 export const Time = styled.div`
     font-size: .8rem;
