@@ -9,6 +9,8 @@ import {
 } from "react-router-dom";
 import "./App.css";
 import Head from "./Head/Head";
+import Footer from "./Footer";
+
 
 function App() {
   
@@ -18,7 +20,7 @@ function App() {
     <div className="App">
       <Head />
       <Router>
-      <div>
+      <div className="content">
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -30,6 +32,7 @@ function App() {
             <Link to="/topics">Topics</Link>
           </li>
         </ul>
+        
 
         <Switch>
           <Route path="/about">
@@ -39,11 +42,14 @@ function App() {
             <div>Topics</div>
           </Route>
           <Route path="/">
-            <div>Home page</div>
+            <Home/>
           </Route>
         </Switch>
       </div>
     </Router>
+    <Footer />
+    
+
     </div>
   );
 }
