@@ -10,6 +10,11 @@ import {
 import "./App.css";
 import Head from "./Head/Head";
 import Footer from "./Footer";
+import About from "./About";
+import Home from "./Home";
+import Topics from "./Topics";
+
+
 
 
 function App() {
@@ -21,14 +26,14 @@ function App() {
       <Head />
       <Router>
       <div className="content">
-        <ul>
-          <li>
+        <ul className="menu">
+          <li className='menu-item'>
             <Link to="/">Home</Link>
           </li>
-          <li>
+          <li className="menu-item">
             <Link to="/about">About</Link>
           </li>
-          <li>
+          <li className="menu-item">
             <Link to="/topics">Topics</Link>
           </li>
         </ul>
@@ -36,10 +41,10 @@ function App() {
 
         <Switch>
           <Route path="/about">
-            <div>About</div>
+            <About />
           </Route>
           <Route path="/topics">
-            <div>Topics</div>
+            <Topics/>
           </Route>
           <Route path="/">
             <Home/>
